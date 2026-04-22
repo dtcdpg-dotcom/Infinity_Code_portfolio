@@ -1,0 +1,40 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F0F23"/>
+      <stop offset="1" stop-color="#1A1A2E"/>
+    </linearGradient>
+    <linearGradient id="analytics" x1="250" y1="150" x2="1350" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FB923C" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1350" cy="150" r="170" fill="#22D3EE" fill-opacity="0.2"/>
+  <circle cx="250" cy="850" r="190" fill="#FB923C" fill-opacity="0.18"/>
+  <rect x="140" y="120" width="1320" height="760" rx="34" fill="#0F0F23" stroke="#22D3EE" stroke-opacity="0.3"/>
+  <!-- Analytics Dashboard -->
+  <rect x="200" y="200" width="1200" height="600" rx="24" fill="url(#analytics)" stroke="#67E8F9" stroke-opacity="0.4"/>
+  <!-- Chart Areas -->
+  <rect x="250" y="250" width="400" height="250" rx="16" fill="#1A1A2E" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="700" y="250" width="400" height="250" rx="16" fill="#1A1A2E" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="250" y="550" width="850" height="200" rx="16" fill="#1A1A2E" stroke="#FED7AA" stroke-opacity="0.4"/>
+  <!-- Bar Chart -->
+  <rect x="300" y="400" width="40" height="80" rx="4" fill="#22D3EE" fill-opacity="0.7"/>
+  <rect x="360" y="380" width="40" height="100" rx="4" fill="#22D3EE" fill-opacity="0.7"/>
+  <rect x="420" y="360" width="40" height="120" rx="4" fill="#22D3EE" fill-opacity="0.7"/>
+  <rect x="480" y="340" width="40" height="140" rx="4" fill="#22D3EE" fill-opacity="0.7"/>
+  <!-- Line Chart -->
+  <path d="M750 420 L820 380 L890 420 L960 360 L1030 400 L1100 350" stroke="#FB923C" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <circle cx="1100" cy="350" r="10" fill="#FB923C"/>
+  <!-- Metrics Cards -->
+  <rect x="1150" y="250" width="200" height="100" rx="12" fill="#0EA5B7" fill-opacity="0.3"/>
+  <rect x="1150" y="380" width="200" height="100" rx="12" fill="#F97316" fill-opacity="0.3"/>
+  <rect x="1150" y="510" width="200" height="100" rx="12" fill="#22D3EE" fill-opacity="0.3"/>
+  <!-- Social Icons -->
+  <circle cx="280" cy="620" r="25" fill="#BAE6FD" fill-opacity="0.5"/>
+  <circle cx="340" cy="620" r="25" fill="#FED7AA" fill-opacity="0.5"/>
+  <circle cx="400" cy="620" r="25" fill="#BAE6FD" fill-opacity="0.5"/>
+  <circle cx="460" cy="620" r="25" fill="#FED7AA" fill-opacity="0.5"/>
+  <text x="220" y="160" fill="#E0F2FE" font-size="34" font-family="Arial, sans-serif">BrandPulse Marketing Analytics</text>
+</svg>

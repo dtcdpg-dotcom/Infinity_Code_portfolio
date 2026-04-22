@@ -1,0 +1,41 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A0B2E"/>
+      <stop offset="1" stop-color="#2D1B4E"/>
+    </linearGradient>
+    <linearGradient id="ecom" x1="200" y1="150" x2="1400" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FB923C" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1300" cy="150" r="160" fill="#22D3EE" fill-opacity="0.2"/>
+  <circle cx="200" cy="850" r="180" fill="#FB923C" fill-opacity="0.18"/>
+  <rect x="140" y="120" width="1320" height="760" rx="34" fill="#1A0B2E" stroke="#22D3EE" stroke-opacity="0.28"/>
+  <!-- Product Grid -->
+  <rect x="200" y="200" width="300" height="300" rx="20" fill="#2D1B4E" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="530" y="200" width="300" height="300" rx="20" fill="#2D1B4E" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="860" y="200" width="300" height="300" rx="20" fill="#2D1B4E" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <!-- Product Images -->
+  <rect x="230" y="230" width="240" height="180" rx="12" fill="#22D3EE" fill-opacity="0.3"/>
+  <rect x="560" y="230" width="240" height="180" rx="12" fill="#FB923C" fill-opacity="0.3"/>
+  <rect x="890" y="230" width="240" height="180" rx="12" fill="#67E8F9" fill-opacity="0.3"/>
+  <!-- Product Titles -->
+  <rect x="230" y="440" width="160" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.5"/>
+  <rect x="230" y="470" width="120" height="16" rx="5" fill="#BAE6FD" fill-opacity="0.3"/>
+  <rect x="560" y="440" width="180" height="20" rx="6" fill="#FED7AA" fill-opacity="0.5"/>
+  <rect x="560" y="470" width="140" height="16" rx="5" fill="#FED7AA" fill-opacity="0.3"/>
+  <rect x="890" y="440" width="170" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.5"/>
+  <rect x="890" y="470" width="130" height="16" rx="5" fill="#BAE6FD" fill-opacity="0.3"/>
+  <!-- Shopping Cart Sidebar -->
+  <rect x="1200" y="200" width="220" height="500" rx="20" fill="url(#ecom)" stroke="#FB923C" stroke-opacity="0.4"/>
+  <rect x="1220" y="230" width="180" height="40" rx="10" fill="#0EA5B7" fill-opacity="0.4"/>
+  <rect x="1220" y="290" width="160" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.5"/>
+  <rect x="1220" y="320" width="140" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.3"/>
+  <rect x="1220" y="360" width="160" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.5"/>
+  <rect x="1220" y="390" width="120" height="20" rx="6" fill="#BAE6FD" fill-opacity="0.3"/>
+  <!-- Checkout Button -->
+  <rect x="1220" y="600" width="180" height="50" rx="12" fill="#F97316" fill-opacity="0.5"/>
+  <text x="220" y="160" fill="#E0F2FE" font-size="34" font-family="Arial, sans-serif">NextCart Pro E-Commerce</text>
+</svg>

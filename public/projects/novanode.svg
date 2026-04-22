@@ -1,0 +1,29 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101814"/>
+      <stop offset="1" stop-color="#183322"/>
+    </linearGradient>
+    <linearGradient id="track" x1="220" y1="740" x2="1380" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#FACC15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1280" cy="210" r="210" fill="#5EEAD4" fill-opacity="0.18"/>
+  <circle cx="280" cy="770" r="260" fill="#FACC15" fill-opacity="0.16"/>
+  <rect x="140" y="110" width="1320" height="780" rx="40" fill="#0B130F" stroke="#86EFAC" stroke-opacity="0.35"/>
+  <rect x="210" y="190" width="1180" height="130" rx="20" fill="#13251B"/>
+  <rect x="210" y="350" width="560" height="470" rx="22" fill="#13251B"/>
+  <rect x="800" y="350" width="590" height="220" rx="22" fill="#13251B"/>
+  <rect x="800" y="600" width="590" height="220" rx="22" fill="#13251B"/>
+  <rect x="250" y="230" width="460" height="40" rx="10" fill="#5EEAD4" fill-opacity="0.34"/>
+  <rect x="250" y="410" width="480" height="40" rx="10" fill="#FDE68A" fill-opacity="0.3"/>
+  <rect x="250" y="470" width="320" height="22" rx="9" fill="#ECFCCB" fill-opacity="0.32"/>
+  <rect x="250" y="510" width="420" height="22" rx="9" fill="#ECFCCB" fill-opacity="0.2"/>
+  <rect x="850" y="410" width="350" height="26" rx="9" fill="#A7F3D0" fill-opacity="0.38"/>
+  <rect x="850" y="650" width="420" height="28" rx="10" fill="#FEF08A" fill-opacity="0.38"/>
+  <path d="M300 740C470 660 630 650 760 560C890 470 1040 500 1300 380" stroke="url(#track)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="1300" cy="380" r="18" fill="#5EEAD4"/>
+  <text x="220" y="165" fill="#DCFCE7" font-size="34" font-family="Arial, sans-serif">NovaNode Growth Platform</text>
+</svg>

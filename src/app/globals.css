@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050a13;
+  --ink: #f4f7ff;
+  --ink-soft: #b7c3dd;
+  --accent-sun: #f59e0b;
+  --accent-cyan: #22d3ee;
+  --accent-warm: #fb923c;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-space);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 0% 0%, #123451 0%, transparent 40%),
+    radial-gradient(circle at 100% 10%, #4a1d0d 0%, transparent 35%),
+    radial-gradient(circle at 50% 100%, #1a3f30 0%, transparent 35%), var(--bg);
+  color: var(--ink);
+  font-family: var(--font-space), "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: var(--font-sora), "Trebuchet MS", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.portfolio-shell {
+  min-height: 100vh;
+}
+
+.ambient {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(42px);
+  opacity: 0.6;
+}
+
+.ambient-one {
+  height: 18rem;
+  width: 18rem;
+  left: -5rem;
+  top: 6rem;
+  background: color-mix(in oklab, var(--accent-cyan) 70%, white 30%);
+  animation: driftA 10s ease-in-out infinite alternate;
+}
+
+.ambient-two {
+  height: 20rem;
+  width: 20rem;
+  right: -7rem;
+  top: 10rem;
+  background: color-mix(in oklab, var(--accent-sun) 75%, white 25%);
+  animation: driftB 12s ease-in-out infinite alternate;
+}
+
+.ambient-three {
+  height: 16rem;
+  width: 16rem;
+  left: 35%;
+  bottom: 5%;
+  background: color-mix(in oklab, var(--accent-warm) 70%, white 30%);
+  animation: driftC 11s ease-in-out infinite alternate;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(145deg, rgba(6, 12, 26, 0.78), rgba(14, 20, 38, 0.62));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 18px 55px -38px rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(18px);
+}
+
+.eyebrow {
+  width: fit-content;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: linear-gradient(120deg, rgba(34, 211, 238, 0.16), rgba(245, 158, 11, 0.16));
+  padding: 0.36rem 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d7f7ff;
+}
+
+.button-sun,
+.button-glass {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  transition: transform 0.24s ease, box-shadow 0.24s ease, background-color 0.24s ease;
+}
+
+.button-sun {
+  background: linear-gradient(130deg, #f59e0b, #fb923c);
+  color: #120b00;
+  padding: 0.75rem 1.2rem;
+  box-shadow: 0 14px 30px -20px rgba(251, 146, 60, 0.8);
+}
+
+.button-sun:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 35px -18px rgba(251, 146, 60, 0.95);
+}
+
+.button-glass {
+  background: rgba(5, 10, 19, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #e0f5ff;
+  padding: 0.75rem 1.2rem;
+}
+
+.button-glass:hover {
+  transform: translateY(-1px);
+  background: rgba(5, 10, 19, 0.72);
+}
+
+.desktop-preview {
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #080f1f;
+}
+
+.desktop-topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111a2f;
+}
+
+.desktop-topbar span {
+  height: 0.62rem;
+  width: 0.62rem;
+  border-radius: 9999px;
+}
+
+.desktop-topbar span:nth-child(1) {
+  background: #f87171;
+}
+
+.desktop-topbar span:nth-child(2) {
+  background: #fbbf24;
+}
+
+.desktop-topbar span:nth-child(3) {
+  background: #4ade80;
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(3, 8, 18, 0.65);
+  padding: 0.78rem 0.95rem;
+  color: #f9fcff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-field::placeholder {
+  color: #93a5c8;
+}
+
+.input-field:focus {
+  border-color: color-mix(in oklab, var(--accent-cyan) 60%, white 20%);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+@keyframes driftA {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    transform: translate3d(1.2rem, -1.6rem, 0) scale(1.05);
+  }
+}
+
+@keyframes driftB {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-1.2rem, 1.4rem, 0) scale(1.07);
+  }
+}
+
+@keyframes driftC {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.96);
+  }
+  to {
+    transform: translate3d(1rem, -1.2rem, 0) scale(1.04);
+  }
+}
+
+@media (max-width: 640px) {
+  .ambient {
+    filter: blur(30px);
+    opacity: 0.45;
+  }
+
+  .ambient-one,
+  .ambient-two,
+  .ambient-three {
+    height: 11rem;
+    width: 11rem;
+  }
+}

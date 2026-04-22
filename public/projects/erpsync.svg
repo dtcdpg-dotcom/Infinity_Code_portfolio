@@ -1,0 +1,43 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1425"/>
+      <stop offset="1" stop-color="#1A2332"/>
+    </linearGradient>
+    <linearGradient id="erp" x1="300" y1="150" x2="1300" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FB923C" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1350" cy="180" r="200" fill="#22D3EE" fill-opacity="0.2"/>
+  <circle cx="250" cy="850" r="240" fill="#FB923C" fill-opacity="0.18"/>
+  <rect x="140" y="120" width="1320" height="760" rx="34" fill="#0C1425" stroke="#22D3EE" stroke-opacity="0.3"/>
+  <!-- Main Dashboard -->
+  <rect x="200" y="200" width="1200" height="600" rx="24" fill="url(#erp)" stroke="#67E8F9" stroke-opacity="0.4"/>
+  <!-- Data Flow Arrows -->
+  <path d="M350 350 L550 350" stroke="#22D3EE" stroke-width="6" marker-end="url(#arrow)"/>
+  <path d="M750 350 L950 350" stroke="#22D3EE" stroke-width="6" marker-end="url(#arrow)"/>
+  <path d="M350 500 L550 500" stroke="#FB923C" stroke-width="6" marker-end="url(#arrow)"/>
+  <path d="M750 500 L950 500" stroke="#FB923C" stroke-width="6" marker-end="url(#arrow)"/>
+  <!-- Integration Nodes -->
+  <circle cx="350" cy="350" r="40" fill="#0EA5B7" stroke="#22D3EE" stroke-width="3"/>
+  <circle cx="550" cy="350" r="40" fill="#0EA5B7" stroke="#22D3EE" stroke-width="3"/>
+  <circle cx="750" cy="350" r="40" fill="#F97316" stroke="#FB923C" stroke-width="3"/>
+  <circle cx="950" cy="350" r="40" fill="#F97316" stroke="#FB923C" stroke-width="3"/>
+  <circle cx="350" cy="500" r="40" fill="#0EA5B7" stroke="#22D3EE" stroke-width="3"/>
+  <circle cx="550" cy="500" r="40" fill="#0EA5B7" stroke="#22D3EE" stroke-width="3"/>
+  <circle cx="750" cy="500" r="40" fill="#F97316" stroke="#FB923C" stroke-width="3"/>
+  <circle cx="950" cy="500" r="40" fill="#F97316" stroke="#FB923C" stroke-width="3"/>
+  <!-- Data Cards -->
+  <rect x="250" y="620" width="180" height="100" rx="12" fill="#1A2332" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="470" y="620" width="180" height="100" rx="12" fill="#1A2332" stroke="#BAE6FD" stroke-opacity="0.4"/>
+  <rect x="690" y="620" width="180" height="100" rx="12" fill="#1A2332" stroke="#FED7AA" stroke-opacity="0.4"/>
+  <rect x="910" y="620" width="180" height="100" rx="12" fill="#1A2332" stroke="#FED7AA" stroke-opacity="0.4"/>
+  <!-- Labels -->
+  <text x="290" y="670" fill="#BAE6FD" font-size="16" font-family="Arial, sans-serif">Inventory</text>
+  <text x="510" y="670" fill="#BAE6FD" font-size="16" font-family="Arial, sans-serif">Orders</text>
+  <text x="730" y="670" fill="#FED7AA" font-size="16" font-family="Arial, sans-serif">Finance</text>
+  <text x="950" y="670" fill="#FED7AA" font-size="16" font-family="Arial, sans-serif">Reports</text>
+  <text x="220" y="160" fill="#E0F2FE" font-size="34" font-family="Arial, sans-serif">ERPSync Next Integration</text>
+</svg>

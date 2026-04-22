@@ -1,0 +1,30 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#270B1A"/>
+      <stop offset="1" stop-color="#421028"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 520) rotate(90) scale(480 760)">
+      <stop stop-color="#FDBA74" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FDBA74" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <circle cx="260" cy="160" r="140" fill="#FB7185" fill-opacity="0.2"/>
+  <circle cx="1360" cy="820" r="200" fill="#F59E0B" fill-opacity="0.22"/>
+  <rect x="150" y="100" width="1300" height="800" rx="38" fill="#180813" stroke="#F97316" stroke-opacity="0.5"/>
+  <rect x="210" y="190" width="340" height="620" rx="22" fill="#2D0E1E"/>
+  <rect x="585" y="190" width="355" height="620" rx="22" fill="#2D0E1E"/>
+  <rect x="975" y="190" width="410" height="620" rx="22" fill="#2D0E1E"/>
+  <rect x="240" y="235" width="280" height="230" rx="18" fill="#FB7185" fill-opacity="0.3"/>
+  <rect x="240" y="500" width="280" height="40" rx="10" fill="#FED7AA" fill-opacity="0.36"/>
+  <rect x="240" y="560" width="200" height="24" rx="8" fill="#FED7AA" fill-opacity="0.22"/>
+  <rect x="615" y="235" width="295" height="360" rx="18" fill="#F97316" fill-opacity="0.31"/>
+  <rect x="615" y="620" width="250" height="32" rx="10" fill="#FFEDD5" fill-opacity="0.42"/>
+  <rect x="615" y="666" width="180" height="22" rx="8" fill="#FFEDD5" fill-opacity="0.28"/>
+  <rect x="1005" y="235" width="350" height="180" rx="18" fill="#FB7185" fill-opacity="0.3"/>
+  <rect x="1005" y="445" width="350" height="180" rx="18" fill="#F59E0B" fill-opacity="0.28"/>
+  <rect x="1005" y="655" width="250" height="26" rx="9" fill="#FFF7ED" fill-opacity="0.42"/>
+  <text x="220" y="160" fill="#FFE4E6" font-size="34" font-family="Arial, sans-serif">LedgerLens Marketplace</text>
+</svg>

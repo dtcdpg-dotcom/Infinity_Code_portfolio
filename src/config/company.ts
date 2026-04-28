@@ -47,7 +47,7 @@ export const companyData: CompanyData = {
   description:
     "Infinity Code is a creative product studio focused on premium websites, interactive brand stories, and fast-moving product builds for startups and teams that want to stand out.",
   contact: {
-    email: "hello@infinitycode.studio",
+    email: "tnathasha@gmail.com",
     phone: "+94 77 8985 435 ",
     location: "Colombo, Sri Lanka",
     website: "https://infinitycode.dev",

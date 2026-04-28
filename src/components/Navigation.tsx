@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { companyData } from "@/config/company";
 
 export default function Navigation() {
@@ -30,7 +31,7 @@ export default function Navigation() {
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-2 text-lg font-bold text-[var(--ink)]"
+          className="flex items-center gap-3 text-lg font-bold text-[var(--ink)]"
         >
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-orange-400 font-display text-sm font-bold text-white shadow-lg">
             {companyData.shortName}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { companyData } from "@/config/company";
 
 export default function Footer() {
@@ -30,11 +31,15 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
           {/* Brand Column */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-orange-400 font-display text-sm font-bold text-white shadow-lg">
-                {companyData.shortName}
-              </div>
-              <span className="text-xl font-bold text-[var(--ink)]">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/projects/logo.png"
+                alt="Infinity Code Logo"
+                width={72}
+                height={72}
+                className="h-20 w-20 object-contain"
+              />
+              <span className="text-2xl font-bold text-[var(--ink)]">
                 {companyData.name}
               </span>
             </div>

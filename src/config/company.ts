@@ -9,6 +9,13 @@ export type PortfolioProject = {
   liveUrl: string;
 };
 
+export type Service = {
+  id: string;
+  title: string;
+  description: string;
+  category: "Development" | "QA" | "Outsourcing";
+};
+
 export type CompanyData = {
   name: string;
   shortName: string;
@@ -27,7 +34,7 @@ export type CompanyData = {
     accessKey: string;
     subject: string;
   };
-  services: string[];
+  services: Service[];
   stats: Array<{ label: string; value: string }>;
   projects: PortfolioProject[];
 };
@@ -41,25 +48,84 @@ export const companyData: CompanyData = {
     "Infinity Code is a creative product studio focused on premium websites, interactive brand stories, and fast-moving product builds for startups and teams that want to stand out.",
   contact: {
     email: "hello@infinitycode.studio",
-    phone: "+94 77 123 4567",
+    phone: "+94 77 8985 435 ",
     location: "Colombo, Sri Lanka",
-    website: "https://zyvo.dev",
+    website: "https://infinitycode.dev",
     linkedIn: "https://www.linkedin.com",
     github: "https://github.com",
   },
   web3forms: {
-    accessKey: "3d7550fb-5ea3-4058-aff4-6fc51b34659c",
+    accessKey:
+      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "YOUR_WEB3FORMS_ACCESS_KEY",
     subject: "New message from Infinity Code portfolio",
   },
   services: [
-    "POS Systems",
-    "ERP Solutions",
-    "Portfolio Websites",
-    "Custom Websites",
-    "Mobile Applications",
-    "Web Applications",
-    "Business Automation",
-    "UI/UX Design",
+    {
+      id: "website-design",
+      title: "Brand-first website design",
+      description: "Custom website design tailored to your brand identity",
+      category: "Development",
+    },
+    {
+      id: "nextjs-engineering",
+      title: "Next.js product engineering",
+      description: "High-performance web applications with modern tech stack",
+      category: "Development",
+    },
+    {
+      id: "web-app-ui",
+      title: "Web app UI systems",
+      description: "Scalable design systems for enterprise applications",
+      category: "Development",
+    },
+    {
+      id: "landing-pages",
+      title: "Landing pages that convert",
+      description: "High-converting landing pages optimized for growth",
+      category: "Development",
+    },
+    {
+      id: "content-motion",
+      title: "Content and motion direction",
+      description: "Engaging animations and interactive experiences",
+      category: "Development",
+    },
+    {
+      id: "performance-seo",
+      title: "Performance and SEO optimization",
+      description: "Lightning-fast pages with search engine optimization",
+      category: "Development",
+    },
+    {
+      id: "qa-consultant",
+      title: "QA Consultant",
+      description: "Expert quality assurance strategy and implementation",
+      category: "QA",
+    },
+    {
+      id: "qa-manual",
+      title: "QA Classes - Manual Testing",
+      description: "Professional manual testing courses and certification training",
+      category: "QA",
+    },
+    {
+      id: "qa-automation",
+      title: "QA Classes - Automation Testing",
+      description: "Advanced automation testing with Selenium, Cypress, and more",
+      category: "QA",
+    },
+    {
+      id: "outsource-qa",
+      title: "Outsourced QA Team",
+      description: "Full-time dedicated QA engineers for your projects",
+      category: "Outsourcing",
+    },
+    {
+      id: "outsource-dev",
+      title: "Outsourced Developers",
+      description: "Expert developers available for contract or project-based work",
+      category: "Outsourcing",
+    },
   ],
   stats: [
     { label: "Projects shipped", value: "48+" },
@@ -99,50 +165,6 @@ export const companyData: CompanyData = {
       stack: ["Next.js", "MDX", "GSAP", "Vercel"],
       sourceUrl: "https://github.com/tailwindlabs/tailwindcss",
       liveUrl: "https://tailwindcss.com",
-    },
-    {
-      id: "shopflow",
-      title: "ShopFlow Mobile",
-      category: "Mobile POS System",
-      summary:
-        "Cross-platform mobile POS application for retail stores with real-time inventory tracking, payment processing, and analytics dashboard.",
-      image: "/projects/shopflow.svg",
-      stack: ["React Native", "TypeScript", "Firebase", "Redux"],
-      sourceUrl: "https://github.com",
-      liveUrl: "https://shopflow-demo.app",
-    },
-    {
-      id: "erpsync",
-      title: "ERPSync Next",
-      category: "ERP Integration",
-      summary:
-        "Enterprise resource planning system with seamless Next.js integration, automated workflows, supply chain management, and real-time reporting.",
-      image: "/projects/erpsync.svg",
-      stack: ["Next.js", "PostgreSQL", "Node.js", "REST APIs"],
-      sourceUrl: "https://github.com",
-      liveUrl: "https://erpsync-platform.io",
-    },
-    {
-      id: "nextecom",
-      title: "NextCart Pro",
-      category: "E-Commerce Platform",
-      summary:
-        "Full-featured e-commerce platform with product catalog, shopping cart, payment gateway integration, order management, and customer analytics.",
-      image: "/projects/nextecom.svg",
-      stack: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
-      sourceUrl: "https://github.com",
-      liveUrl: "https://nextcart-demo.shop",
-    },
-    {
-      id: "brandpulse",
-      title: "BrandPulse Marketing",
-      category: "Marketing Analytics",
-      summary:
-        "Comprehensive marketing automation platform with campaign management, social media integration, email marketing, and performance metrics dashboard.",
-      image: "/projects/brandpulse.svg",
-      stack: ["Next.js", "TypeScript", "Chart.js", "AWS"],
-      sourceUrl: "https://github.com",
-      liveUrl: "https://brandpulse-marketing.com",
     },
   ],
 };

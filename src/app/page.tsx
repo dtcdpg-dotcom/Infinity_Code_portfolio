@@ -5,6 +5,7 @@ import Image from "next/image";
 import { companyData } from "@/config/company";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import ServiceCards from "@/components/ServiceCards";
 
 const revealContainer = {
   hidden: { opacity: 0 },
@@ -120,19 +121,13 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="glass-panel rounded-[1.7rem] p-6 md:p-8"
+          className="space-y-8"
         >
-          <p className="eyebrow">What We Do</p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {companyData.services.map((service) => (
-              <div
-                key={service}
-                className="rounded-2xl border border-white/20 bg-white/6 px-4 py-3 text-sm font-medium text-[var(--ink)]"
-              >
-                {service}
-              </div>
-            ))}
+          <div className="space-y-2">
+            <p className="eyebrow">What We Do</p>
+            <h2 className="font-display text-3xl sm:text-4xl">Our Services</h2>
           </div>
+          <ServiceCards />
         </motion.section>
 
         <section id="work" className="space-y-4 pt-4">

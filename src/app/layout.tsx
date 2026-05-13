@@ -16,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Infinity Code | Creative Digital Studio",
+  title: "NT GO 360 | Creative Digital Studio",
   description:
-    "Infinity Code builds creative, motion-rich web experiences and product interfaces for modern brands.",
+    "NT GO 360 builds creative, motion-rich web experiences and product interfaces for modern brands.",
 };
 
 import CustomCursor from "@/components/CustomCursor";

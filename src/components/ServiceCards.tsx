@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { companyData } from "@/config/company";
+import TiltCard from "@/components/TiltCard";
 
 const categoryIcons: Record<string, string> = {
   Development: "💻",
@@ -73,13 +74,13 @@ export default function ServiceCards() {
             className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
           >
             {services.map((service) => (
-              <motion.div
-                key={service.id}
-                variants={revealItem}
-                className={`group relative overflow-hidden rounded-2xl border bg-gradient-to-br p-6 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 ${
-                  categoryColors[service.category]
-                }`}
-              >
+              <TiltCard key={service.id} className="h-full">
+                <motion.div
+                  variants={revealItem}
+                  className={`group relative overflow-hidden rounded-2xl border bg-gradient-to-br p-6 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 ${
+                    categoryColors[service.category]
+                  } h-full`}
+                >
                 {/* Animated Background */}
                 <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/0 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -102,6 +103,7 @@ export default function ServiceCards() {
                 {/* Hover Accent Line */}
                 <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 via-orange-400 to-cyan-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
               </motion.div>
+              </TiltCard>
             ))}
           </motion.div>
         </motion.section>

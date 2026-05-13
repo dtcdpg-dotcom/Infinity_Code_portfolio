@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { companyData } from "@/config/company";
 
+import Magnetic from "@/components/Magnetic";
+
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,40 +31,54 @@ export default function Navigation() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         {/* Logo */}
-        <a
-          href="#"
-          className="flex items-center gap-3 text-lg font-bold text-[var(--ink)]"
-        >
-          <Image
-            src="/projects/ntGoLogo.png"
-            alt={`${companyData.name} Logo`}
-            width={36}
-            height={36}
-            className="h-9 w-9 object-contain"
-          />
-          <span className="hidden sm:inline">{companyData.name}</span>
-        </a>
+        <Magnetic>
+          <a
+            href="#"
+            className="group flex items-center gap-4 text-lg font-bold text-[var(--ink)]"
+          >
+            <div className="relative flex h-20 w-20 items-center justify-center">
+              {/* Eerie dimming backlight */}
+              <div className="absolute -inset-3 animate-pulse rounded-full bg-white/20 blur-[14px] transition-all duration-700 group-hover:bg-white/40" />
+              <div className="absolute -inset-5 rounded-full bg-orange-500/15 blur-[20px] animate-[pulse_3s_ease-in-out_infinite]" />
+              
+              <Image
+                src="/projects/ntGoLogo_transparent.png"
+                alt={`${companyData.name} Logo`}
+                width={80}
+                height={80}
+                className="relative z-10 h-20 w-20 object-contain drop-shadow-[0_0_5px_rgba(255,255,255,0.4)]"
+              />
+            </div>
+            <span className="hidden sm:inline relative z-10">{companyData.name}</span>
+          </a>
+        </Magnetic>
 
         {/* Navigation Links */}
         <div className="flex items-center gap-6">
-          <a
-            href="#"
-            className="nav-link hidden text-sm font-medium text-[var(--ink-soft)] transition-colors hover:text-[var(--ink)] sm:inline"
-          >
-            Home
-          </a>
-          <a
-            href="#work"
-            className="nav-link text-sm font-medium text-[var(--ink-soft)] transition-colors hover:text-[var(--ink)]"
-          >
-            Work
-          </a>
-          <a
-            href="#contact"
-            className="button-sun px-4 py-2 text-sm font-semibold"
-          >
-            Contact
-          </a>
+          <Magnetic>
+            <a
+              href="#"
+              className="nav-link hidden text-sm font-medium text-[var(--ink-soft)] transition-colors hover:text-[var(--ink)] sm:inline"
+            >
+              Home
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href="#work"
+              className="nav-link text-sm font-medium text-[var(--ink-soft)] transition-colors hover:text-[var(--ink)]"
+            >
+              Work
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              href="#contact"
+              className="button-sun px-4 py-2 text-sm font-semibold inline-block"
+            >
+              Contact
+            </a>
+          </Magnetic>
         </div>
       </div>
     </motion.nav>

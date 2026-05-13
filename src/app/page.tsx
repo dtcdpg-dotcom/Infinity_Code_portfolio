@@ -6,6 +6,8 @@ import { companyData } from "@/config/company";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import ServiceCards from "@/components/ServiceCards";
+import Magnetic from "@/components/Magnetic";
+import TiltCard from "@/components/TiltCard";
 
 const revealContainer = {
   hidden: { opacity: 0 },
@@ -63,12 +65,16 @@ export default function Home() {
               variants={revealItem}
               className="flex flex-wrap gap-3 pt-1 text-sm font-semibold"
             >
-              <a className="button-sun" href="#work">
-                Explore Our Work
-              </a>
-              <a className="button-glass" href="#contact">
-                Talk With Us
-              </a>
+              <Magnetic>
+                <a className="button-sun" href="#work">
+                  Explore Our Work
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a className="button-glass" href="#contact">
+                  Talk With Us
+                </a>
+              </Magnetic>
             </motion.div>
           </div>
 
@@ -144,14 +150,14 @@ export default function Home() {
 
           <div className="grid gap-5 lg:grid-cols-3">
             {companyData.projects.map((project, index) => (
-              <motion.article
-                key={project.id}
-                initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.65, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="glass-panel group rounded-[1.6rem] p-4"
-              >
+              <TiltCard key={project.id} className="h-full">
+                <motion.article
+                  initial={{ opacity: 0, y: 35 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.65, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                  className="glass-panel group rounded-[1.6rem] p-4 h-full"
+                >
                 <div className="desktop-preview shadow-[0_16px_40px_-24px_rgba(0,0,0,0.8)] transition-transform duration-500 group-hover:-translate-y-1">
                   <div className="desktop-topbar">
                     <span />
@@ -213,6 +219,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.article>
+              </TiltCard>
             ))}
           </div>
         </section>

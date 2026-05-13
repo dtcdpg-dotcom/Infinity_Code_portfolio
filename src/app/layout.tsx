@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Infinity Code builds creative, motion-rich web experiences and product interfaces for modern brands.",
 };
 
+import CustomCursor from "@/components/CustomCursor";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,7 +33,8 @@ export default function RootLayout({
       lang="en"
       className={`${sora.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col cursor-default">
+        <CustomCursor />
         <Navigation />
         {children}
       </body>

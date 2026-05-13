@@ -34,22 +34,16 @@ export default function Navigation() {
         <Magnetic>
           <a
             href="#"
-            className="group flex items-center gap-4 text-lg font-bold text-[var(--ink)]"
+            className="group flex items-center text-3xl font-black tracking-tighter drop-shadow-md transition-transform duration-300 hover:scale-105"
           >
-            <div className="relative flex h-20 w-20 items-center justify-center">
-              {/* Eerie dimming backlight */}
-              <div className="absolute -inset-3 animate-pulse rounded-full bg-white/20 blur-[14px] transition-all duration-700 group-hover:bg-white/40" />
-              <div className="absolute -inset-5 rounded-full bg-orange-500/15 blur-[20px] animate-[pulse_3s_ease-in-out_infinite]" />
-              
-              <Image
-                src="/projects/ntGoLogo_transparent.png"
-                alt={`${companyData.name} Logo`}
-                width={80}
-                height={80}
-                className="relative z-10 h-20 w-20 object-contain drop-shadow-[0_0_5px_rgba(255,255,255,0.4)]"
-              />
-            </div>
-            <span className="hidden sm:inline relative z-10">{companyData.name}</span>
+            <span className="text-[#3b82f6]">NT</span>
+            <span 
+              className="text-[#f7931e] ml-1.5 flex items-start"
+              style={{ animation: 'scaryFlicker 4s infinite' }}
+            >
+              GO 360
+              <span className="text-xl leading-none mt-1 ml-0.5">&deg;</span>
+            </span>
           </a>
         </Magnetic>
 

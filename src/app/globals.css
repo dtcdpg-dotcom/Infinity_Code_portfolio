@@ -232,3 +232,18 @@ a {
     width: 11rem;
   }
 }
+
+@keyframes scaryFlicker {
+  0%, 19.9%, 22%, 62.9%, 64%, 64.9%, 70%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(247, 147, 30, 0.6)) drop-shadow(0 0 20px rgba(247, 147, 30, 0.4));
+  }
+  20%, 21.9%, 63%, 63.9%, 65%, 69.9% {
+    opacity: 0.3;
+    filter: none;
+  }
+}
+
+.animate-scary-flicker {
+  animation: scaryFlicker 4s infinite;
+}

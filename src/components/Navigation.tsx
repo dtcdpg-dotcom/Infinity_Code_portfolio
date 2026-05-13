@@ -33,9 +33,13 @@ export default function Navigation() {
           href="#"
           className="flex items-center gap-3 text-lg font-bold text-[var(--ink)]"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-orange-400 font-display text-sm font-bold text-white shadow-lg">
-            {companyData.shortName}
-          </div>
+          <Image
+            src="/projects/ntGoLogo.png"
+            alt={`${companyData.name} Logo`}
+            width={36}
+            height={36}
+            className="h-9 w-9 object-contain"
+          />
           <span className="hidden sm:inline">{companyData.name}</span>
         </a>
 

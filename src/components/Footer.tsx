@@ -33,8 +33,8 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/projects/logo.png"
-                alt="Infinity Code Logo"
+                src="/projects/ntGoLogo.png"
+                alt={`${companyData.name} Logo`}
                 width={72}
                 height={72}
                 className="h-20 w-20 object-contain"

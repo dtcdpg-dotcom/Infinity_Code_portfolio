@@ -40,8 +40,8 @@ export type CompanyData = {
 };
 
 export const companyData: CompanyData = {
-  name: "Infinity Code",
-  shortName: "IC",
+  name: "NT GO 360",
+  shortName: "NT",
   tagline: "Designing digital gravity for modern brands.",
   headline: "We craft web experiences that stop the scroll and start conversations.",
   description:

@@ -43,9 +43,9 @@ export const companyData: CompanyData = {
   name: "NT GO 360",
   shortName: "NT",
   tagline: "Designing digital gravity for modern brands.",
-  headline: "We craft web experiences that stop the scroll and start conversations.",
+  headline: "We engineer powerful software solutions that accelerate your business and start conversations.",
   description:
-    "Infinity Code is a creative product studio focused on premium websites, interactive brand stories, and fast-moving product builds for startups and teams that want to stand out.",
+    "NT GO 360 is a creative software studio focused on premium digital solutions, scalable applications, and fast-moving product builds for teams that want to stand out.",
   contact: {
     email: "tnathasha@gmail.com",
     phone: "+94 77 8985 435 ",
@@ -57,7 +57,7 @@ export const companyData: CompanyData = {
   web3forms: {
     accessKey:
       process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "YOUR_WEB3FORMS_ACCESS_KEY",
-    subject: "New message from Infinity Code portfolio",
+    subject: "New message from NT GO 360 portfolio",
   },
   services: [
     {

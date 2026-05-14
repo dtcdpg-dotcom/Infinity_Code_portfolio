@@ -84,7 +84,7 @@ export default function Home() {
           >
             <div className="inline-flex w-fit items-center gap-2 rounded-full bg-black/40 px-3 py-1 text-xs font-semibold tracking-wide text-white/90">
               <span className="inline-block h-2 w-2 rounded-full bg-emerald-300" />
-              Infinity Code Studio
+              NT GO 360 Studio
             </div>
             <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-cyan-200/30 blur-2xl" />
             <div className="absolute -left-8 bottom-0 h-36 w-36 rounded-full bg-orange-300/30 blur-2xl" />

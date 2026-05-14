@@ -34,7 +34,7 @@ export default function Navigation() {
         <Magnetic>
           <a
             href="#"
-            className="group flex items-center text-3xl font-black tracking-tighter drop-shadow-md transition-transform duration-300 hover:scale-105"
+            className="group flex items-center text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter drop-shadow-md transition-transform duration-300 hover:scale-105"
           >
             <span className="text-[#3b82f6]">NT</span>
             <span 
@@ -42,7 +42,7 @@ export default function Navigation() {
               style={{ animation: 'scaryFlicker 4s infinite' }}
             >
               GO 360
-              <span className="text-xl leading-none mt-1 ml-0.5">&deg;</span>
+              <span className="text-xl sm:text-2xl md:text-3xl leading-none mt-1 ml-0.5">&deg;</span>
             </span>
           </a>
         </Magnetic>

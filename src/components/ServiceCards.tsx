@@ -5,13 +5,13 @@ import { companyData } from "@/config/company";
 import TiltCard from "@/components/TiltCard";
 
 const categoryIcons: Record<string, string> = {
-  Development: "💻",
+  "System Development": "💻",
   QA: "✓",
   Outsourcing: "🤝",
 };
 
 const categoryColors: Record<string, string> = {
-  Development: "from-cyan-500/20 to-blue-500/20 border-cyan-400/30",
+  "System Development": "from-cyan-500/20 to-blue-500/20 border-cyan-400/30",
   QA: "from-orange-500/20 to-yellow-500/20 border-orange-400/30",
   Outsourcing: "from-purple-500/20 to-pink-500/20 border-purple-400/30",
 };
@@ -40,7 +40,7 @@ export default function ServiceCards() {
   };
 
   const groupedServices = {
-    Development: companyData.services.filter((s) => s.category === "Development"),
+    "System Development": companyData.services.filter((s) => s.category === "System Development"),
     QA: companyData.services.filter((s) => s.category === "QA"),
     Outsourcing: companyData.services.filter((s) => s.category === "Outsourcing"),
   };

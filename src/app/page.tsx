@@ -236,7 +236,7 @@ export default function Home() {
             <p className="eyebrow">Contact Us</p>
             <h2 className="font-display text-3xl sm:text-4xl">Build something unforgettable with us.</h2>
             <p className="text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-              We are available for startup launches, redesigns, product growth sprints, and full web builds.
+              We are available for bespoke system development, scalable architecture builds, and complex enterprise integrations.
               Send your details and we will reach out quickly.
             </p>
             <ul className="space-y-2 text-sm text-[var(--ink)]">

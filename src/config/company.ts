@@ -13,7 +13,7 @@ export type Service = {
   id: string;
   title: string;
   description: string;
-  category: "Development" | "QA" | "Outsourcing";
+  category: "System Development" | "QA" | "Outsourcing";
 };
 
 export type CompanyData = {
@@ -61,40 +61,34 @@ export const companyData: CompanyData = {
   },
   services: [
     {
-      id: "website-design",
-      title: "Brand-first website design",
-      description: "Custom website design tailored to your brand identity",
-      category: "Development",
+      id: "enterprise-erp",
+      title: "Enterprise ERP Solutions",
+      description: "Scalable resource planning systems tailored for complex business workflows",
+      category: "System Development",
     },
     {
-      id: "nextjs-engineering",
-      title: "Next.js product engineering",
-      description: "High-performance web applications with modern tech stack",
-      category: "Development",
+      id: "cloud-pos",
+      title: "Cloud POS & Retail Systems",
+      description: "Full-stack Point of Sale architectures with offline-first capabilities",
+      category: "System Development",
     },
     {
-      id: "web-app-ui",
-      title: "Web app UI systems",
-      description: "Scalable design systems for enterprise applications",
-      category: "Development",
+      id: "ai-pipelines",
+      title: "AI-Integrated Pipelines",
+      description: "Automated machine learning workflows and visual inspection systems",
+      category: "System Development",
     },
     {
-      id: "landing-pages",
-      title: "Landing pages that convert",
-      description: "High-converting landing pages optimized for growth",
-      category: "Development",
+      id: "custom-crm",
+      title: "Custom CRM Architecture",
+      description: "Bespoke customer relationship management platforms",
+      category: "System Development",
     },
     {
-      id: "content-motion",
-      title: "Content and motion direction",
-      description: "Engaging animations and interactive experiences",
-      category: "Development",
-    },
-    {
-      id: "performance-seo",
-      title: "Performance and SEO optimization",
-      description: "Lightning-fast pages with search engine optimization",
-      category: "Development",
+      id: "performance-optimization",
+      title: "High-Performance Architectures",
+      description: "Distributed systems and scalable cloud infrastructure",
+      category: "System Development",
     },
     {
       id: "qa-consultant",
@@ -138,33 +132,33 @@ export const companyData: CompanyData = {
       title: "Tezlaa Cafe Management System",
       category: "POS & ERP",
       summary:
-        "A data-rich command center for DeFi teams to track liquidity, wallet activity, and protocol health in real time.",
+        "A complete, cloud-synchronized point-of-sale and enterprise management system featuring real-time inventory, hardware receipt printing, and robust offline support.",
       image: "/projects/chainpilot.svg",
-      stack: ["Next.js", "TypeScript", "Tailwind", "ECharts"],
-      sourceUrl: "https://github.com/vercel/next.js",
-      liveUrl: "https://nextjs.org",
+      stack: ["Next.js", "React", "Node.js", "SQLite"],
+      sourceUrl: "https://github.com/",
+      liveUrl: "https://tezlaa.com",
     },
     {
-      id: "ledgerlens",
-      title: "LedgerLens",
-      category: "NFT Marketplace Experience",
+      id: "ai-inspection",
+      title: "Industrial AI Inspection Station",
+      category: "Computer Vision Pipeline",
       summary:
-        "An immersive storefront with animated galleries, rarity-driven discovery, and checkout flows optimized for conversion.",
+        "A production-ready AI pipeline using YOLOv8 to automate factory quality control, integrated directly with Verification Dashboards.",
       image: "/projects/ledgerlens.svg",
-      stack: ["React", "Framer Motion", "Node.js", "PostgreSQL"],
-      sourceUrl: "https://github.com/facebook/react",
-      liveUrl: "https://react.dev",
+      stack: ["Python", "FastAPI", "YOLOv8", "MongoDB"],
+      sourceUrl: "https://github.com/",
+      liveUrl: "https://ai-inspection.demo",
     },
     {
-      id: "novanode",
-      title: "NovaNode",
-      category: "SaaS Growth Website",
+      id: "inventory-command",
+      title: "Global Inventory Command Center",
+      category: "Distributed System",
       summary:
-        "A high-performance marketing site with modular content blocks and storytelling animations across every section.",
+        "A distributed tracking system handling millions of SKUs across multi-region warehouses with predictive supply chain analytics.",
       image: "/projects/novanode.svg",
-      stack: ["Next.js", "MDX", "GSAP", "Vercel"],
-      sourceUrl: "https://github.com/tailwindlabs/tailwindcss",
-      liveUrl: "https://tailwindcss.com",
+      stack: ["Next.js", "PostgreSQL", "Redis", "Kubernetes"],
+      sourceUrl: "https://github.com/",
+      liveUrl: "https://inventory.demo",
     },
   ],
 };
